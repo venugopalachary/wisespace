@@ -82,16 +82,16 @@ body {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(http://192.168.29.202/wespace/assets/img/blog/coworking.jpeg);
+  background-image: url(../assets/img/blog/coworking.jpeg);
 }
 .card:nth-child(2):before {
-  background-image: url(http://192.168.29.202/wespace/assets/img/blog/architect.jpeg);
+  background-image: url(../assets/img/blog/architect.jpeg);
 }
 .card:nth-child(3):before {
-  background-image: url(http://192.168.29.202/wespace/assets/img/blog/institute.jpeg);
+  background-image: url(../assets/img/blog/institute.jpeg);
 }
 .card:nth-child(4):before {
-  background-image: url(http://192.168.29.202/wespace/assets/img/blog/architect.jpeg);
+  background-image: url(../assets/img/blog/architect.jpeg);
 }
 
 .content {
