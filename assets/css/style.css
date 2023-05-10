@@ -379,7 +379,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100%;
-  background: #D9FFFFFF;
+  background: #fff;
 }
 
 #hero .container {
@@ -1797,6 +1797,7 @@ section {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #565b8f;
+  text-align: -webkit-center;
 }
 
 #footer .copyright {
@@ -1834,7 +1835,7 @@ section {
 /*button effects at about us*/
 
 button {
-  margin: 20px;
+  margin: 10px;
 }
 .custom-btn {
   width: 150px;
@@ -1889,23 +1890,9 @@ button {
 }
 
 
-/*Card blur Hover for projects*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.container {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/* Projects Card */
 
 .container .card {
     position: relative;
@@ -1919,33 +1906,8 @@ button {
     transition: 0.5s;
 }
 
-/* ADDING BLUR ON HOVER of the whole container & making card visible */
-.container:hover .card {
-    filter: blur(20px);
-    transform: scale(0.9);
-    opacity: 0.5;
-}
-.container .card:hover {
-    filter: blur(0px);
-    transform: scale(1.1);
-    opacity: 1;
-}
 
-.container .card .circle {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    clip-path: circle(180px at center 0);
-    text-align: center;
-}
 
-.container .card .circle h2 {
-    color: #fff;
-    font-size: 4.5rem;
-    padding: 30px 0;
-    font-family: 'Roboto', sans-serif;
-}
 
 .container .card .content {
     position: absolute;
@@ -1970,18 +1932,100 @@ button {
     margin-left: 60px;
 }
 
-.container .card:nth-child(1) .circle,
-.container .card:nth-child(1) .content a
+
+/*Card blur Hover for projects*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerk {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerk .card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+/* ADDING BLUR ON HOVER of the whole container & making card visible */
+.containerk:hover .card {
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+.containerk .card:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.containerk .card .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.containerk .card .circle h2 {
+    color: #fff;
+    font-size: 4.5rem;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerk .card .content {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.containerk .card .content p {
+    color: #666;
+}
+
+.containerk .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.containerk .card:nth-child(1) .circle,
+.containerk .card:nth-child(1) .content a
 {
     background: #00DDDD;
 }
-.container .card:nth-child(2) .circle,
-.container .card:nth-child(2) .content a
+.containerk .card:nth-child(2) .circle,
+.containerk .card:nth-child(2) .content a
 {
     background: #FF26FF;
 }
-.container .card:nth-child(3) .circle,
-.container .card:nth-child(3) .content a
+.containerk .card:nth-child(3) .circle,
+.containerk .card:nth-child(3) .content a
 {
     background: #006EDD;
 }
